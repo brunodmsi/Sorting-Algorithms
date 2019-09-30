@@ -229,7 +229,7 @@
     esutils "^2.0.2"
     js-tokens "^4.0.0"
 
-"@babel/node@^7.0.0":
+"@babel/node@^7.6.2":
   version "7.6.2"
   resolved "https://registry.yarnpkg.com/@babel/node/-/node-7.6.2.tgz#a94479f95ee2008342f4847346c8bb8ff2770f44"
   integrity sha512-59UxvVtRpVpL5i0KTcw41FqLNPT/Jc9k/48Rq00wfN49lAIQeRKGwZ6xX1FWlCfcIGP+5l4rfZajORvmYkhfGg==
