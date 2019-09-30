@@ -197,3 +197,23 @@ input {
   text-align: center;
   background-color: #1748bd;
 }
+
+#visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#before, #after {
+  max-width: 70%;
+  background-color: rgba(35, 37, 35, 0.133);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#before p, #after p {
+  font-size: 14px;
+  font-style: italic;
+  word-break: break-word;
+}

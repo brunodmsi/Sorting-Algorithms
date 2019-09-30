@@ -1,4 +1,5 @@
 import { Router } from "express";
+import path from 'path';
 
 import BubbleSort from "./algorithms/bubble-sort/BubbleSort";
 import MergeSort from "./algorithms/merge-sort/MergeSort";
@@ -49,5 +50,30 @@ routes.get("/sorting-history/:sortingAlgorithm", (req, res) => {
 
   return res.json(text);
 });
+
+routes.get('/', (req, res) => {
+  res.sendFile(
+    path.join(__dirname, '..', 'public', 'index.html')
+  )
+})
+
+routes.get('/styles.css', (req, res) => {
+  res.sendFile(
+    path.join(__dirname, '..', 'public', 'styles.css')
+  )
+})
+
+routes.get('/script.js', (req, res) => {
+  res.sendFile(
+    path.join(__dirname, '..', 'public', 'script.js')
+  )
+})
+
+routes.get('/assets/logo.png', (req, res) => {
+  res.sendFile(
+    path.join(__dirname, '..', 'public', 'assets', 'logo.png')
+  )
+})
+
 
 export default routes;

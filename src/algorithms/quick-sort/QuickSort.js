@@ -1,9 +1,7 @@
 import Sort from "../Sort";
 
 export default class QuickSort extends Sort {
-  sort(originalArray) {
-    let stepper = 0;
-
+  sort(originalArray, stepper=0) {
     const array = [...originalArray];
 
     if (array.length < 1) return array;
@@ -32,9 +30,9 @@ export default class QuickSort extends Sort {
       stepper++;
     }
 
-    const leftArraySorted = this.sort(leftArray);
+    const leftArraySorted = this.sort(leftArray, stepper);
     stepper++;
-    const rightArraySorted = this.sort(rightArray);
+    const rightArraySorted = this.sort(rightArray, stepper);
     stepper++;
 
     return leftArraySorted.concat(centerArray, rightArraySorted);
