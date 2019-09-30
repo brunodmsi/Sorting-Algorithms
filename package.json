@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "babel-node src/index.js"
+    "dev": "nodemon src/index.js"
   },
   "keywords": [],
   "author": "",
@@ -13,7 +13,8 @@
     "@babel/cli": "^7.6.2",
     "@babel/core": "^7.6.2",
     "@babel/node": "^7.0.0",
-    "@babel/preset-env": "^7.6.2"
+    "@babel/preset-env": "^7.6.2",
+    "nodemon": "^1.19.2"
   },
   "dependencies": {
     "cors": "^2.8.5",

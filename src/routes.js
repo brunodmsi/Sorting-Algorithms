@@ -14,9 +14,12 @@ const routes = new Router();
 routes.get("/api/:sortingAlgorithm", (req, res) => {
   const { sortingAlgorithm } = req.params;
 
-  const { length, maxNumber } = req.body;
+  const { length, maxNumber } = req.query;
 
-  const array = new ArrayGenerator().generate(length, maxNumber);
+  const array = new ArrayGenerator().generate(
+    parseInt(length),
+    parseInt(maxNumber)
+  );
 
   try {
     const sortedAndTimed =
